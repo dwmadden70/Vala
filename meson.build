@@ -1,4 +1,4 @@
-project('elementary', 'vala', 'c')
+project('MyApp', 'vala', 'c')
 
 gtk4_dep = dependency('gtk4')
 glib_dep = dependency('glib-2.0')

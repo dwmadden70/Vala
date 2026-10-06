@@ -7,7 +7,7 @@
 Simply call executable() multiple times. Each call is an independent target:
 
 ```
-project('elementary', 'vala', 'c')
+project('MyApp', 'vala', 'c')
 
 gtk4 = dependency('gtk4')
 
@@ -29,7 +29,7 @@ executable('utility',
 If both executables use the same files, extract them into a static library to avoid recompiling:
 
 ```cpp
-project('elementary', 'vala', 'c')
+project('MyApp', 'vala', 'c')
 
 gtk4 = dependency('gtk4')
 
