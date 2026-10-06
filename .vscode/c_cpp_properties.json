@@ -1,0 +1,26 @@
+{
+	"configurations": [
+		{
+			"name": "GTK4",
+			"includePath": [
+				"${workspaceFolder}/**",
+				"/msys64/mingw64/include/gtk-4.0",
+				"/msys64/mingw64/include/glib-2.0",
+				"/msys64/mingw64/lib/glib-2.0/include",
+				"/msys64/mingw64/include/pango-1.0",
+				"/msys64/mingw64/include/harfbuzz",
+				"/msys64/mingw64/include/freetype2",
+				"/msys64/mingw64/include/cairo",
+				"/msys64/mingw64/include/gdk-pixbuf-2.0",
+				"/msys64/mingw64/include/graphene-1.0",
+				"/msys64/mingw64/lib/graphene-1.0/include"
+			],
+			"defines": [],
+			"compilerPath": "/msys64/mingw64/bin/gcc",
+			"cStandard": "c17",
+			"cppStandard": "c++17",
+			"intelliSenseMode": "windows-gcc-x64"
+		}
+	],
+	"version": 4
+}

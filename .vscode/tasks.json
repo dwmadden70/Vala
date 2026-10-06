@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Vala with Gtk4",
+      "type": "shell",
+      "command": "valac",
+      "args": [
+        "--pkg=gtk4",
+        "${file}",
+        "-X",
+        "-w",
+        "-o",
+        "${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
