@@ -1,18 +1,19 @@
 #!/usr/bin/env -S vala --pkg gtk4
 
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2026 David Madden <dwmadden70@protonme.com>
+ */
+
 using Gtk;
 
 public class MyApp : Gtk.Application {
 
     public MyApp () {
         Object (
-            application_id: "io.github.dwmadden70.LearnVala",
+            application_id: "io.github.dwmadden70.vala",
             flags: ApplicationFlags.DEFAULT_FLAGS
         );
-    }
-
-    public override void open (string[] files, string hint) {
-        // Handle opening files here
     }
 
     protected override void activate () {
@@ -29,7 +30,10 @@ public class MyApp : Gtk.Application {
             button_hello.sensitive = false;
         });
 
+        var label = new Gtk.Label ("Hello World!");
+
         var main_window = new Gtk.ApplicationWindow (this) {
+            child = label,
             default_width = 300,
             default_height = 300,
             title = "Hello World"
