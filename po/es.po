@@ -1,0 +1,25 @@
+#: source/application.vala:21
+msgid "Click me!"
+msgstr ""
+
+#: source/application.vala:29 source/application.vala:33
+msgid "Hello World!"
+msgstr ""
+
+#: source/application.vala:39
+msgid "Hello World"
+msgstr ""
+
+#: data/application.desktop.in:5 data/application.metainfo.xml.in:5
+msgid "My App"
+msgstr ""
+
+#: data/application.desktop.in:6 data/application.metainfo.xml.in:6
+msgid "Proves that we can use Vala and Gtk"
+msgstr ""
+
+#: data/application.metainfo.xml.in:12
+msgid ""
+"A quick summary of your app's main selling points and features. Just a "
+"couple sentences per paragraph is best"
+msgstr ""
