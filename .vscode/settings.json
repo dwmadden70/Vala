@@ -1,4 +1,6 @@
 {
   "vls.serverPath": "C:/msys64/mingw64/bin/vala-language-server.exe",
-  "vala.languageServerPath": "C:\\msys64\\mingw64\\bin\\vala-language-server.exe"
+  "vala.languageServerPath": "C:\\msys64\\mingw64\\bin\\vala-language-server.exe",
+  "C_Cpp.default.compileCommands": "d:\\Projects\\Vala\\vala\\builddir/compile_commands.json",
+  "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild"
 }

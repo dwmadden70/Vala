@@ -12,17 +12,17 @@ project('MyApp', 'vala', 'c')
 gtk4 = dependency('gtk4')
 
 executable('application',
-  'source/application.vala',
+  'src/application.vala',
   dependencies : [gtk4]
 )
 
 executable('utility',
-  'source/utility.vala',
+  'src/utility.vala',
   dependencies : [gtk4]
 )
 ```
 
-## Common sources
+## Common srcs
 
 ---
 
@@ -33,16 +33,16 @@ project('MyApp', 'vala', 'c')
 
 gtk4 = dependency('gtk4')
 
-common = static_library('common', 'source/shared.vala',
+common = static_library('common', 'src/shared.vala',
   dependencies : [gtk4]
 )
 
-executable('application', 'source/application.vala',
+executable('application', 'src/application.vala',
   dependencies : [gtk4],
   link_with : common
 )
 
-executable('utility', 'source/utility.vala',
+executable('utility', 'src/utility.vala',
   dependencies : [gtk4],
   link_with : common
 )
@@ -52,13 +52,13 @@ executable('utility', 'source/utility.vala',
 
 ---
 
-Use <code style="color: orange;">foreach</code> when you have many executables that differ only by name/sources:
+Use <code style="color: orange;">foreach</code> when you have many executables that differ only by name/srcs:
 
 ```cpp
 progs = {
-  'app1' : 'source/app1.vala',
-  'app2' : 'source/app2.vala',
-  'app3' : 'source/app3.vala',
+  'app1' : 'src/app1.vala',
+  'app2' : 'src/app2.vala',
+  'app3' : 'src/app3.vala',
 }
 
 foreach name, src : progs

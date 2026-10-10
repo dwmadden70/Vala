@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: source/application.vala:21
+#: src/application.vala:21
 msgid "Click me!"
 msgstr ""
 
-#: source/application.vala:29 source/application.vala:33
+#: src/application.vala:29 src/application.vala:33
 msgid "Hello World!"
 msgstr ""
 
-#: source/application.vala:39
+#: src/application.vala:39
 msgid "Hello World"
 msgstr ""
 

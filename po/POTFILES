@@ -1,3 +1,3 @@
-source/application.vala
+src/application.vala
 data/application.desktop.in
 data/application.metainfo.xml.in
